@@ -16,7 +16,7 @@ const Header = ({onLoad, onPlaceChanged}) => {
                     Duniya Ghumo </Typography>
 
                     <Box display="flex">
-                        <Typography variant="h6" className={classes.title}>#yourtravelpartner💖</Typography>
+                        <Typography variant="h6" className={classes.title}>Made with ❤ in india</Typography>
                                 {/* <Autocomplete onLoad={onLoad} onPlaceChanged={onPlaceChanged}> */}
                                     <div className={classes.search}>
                                     <div className={classes.searchIcon}>

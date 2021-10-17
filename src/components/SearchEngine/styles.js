@@ -2,7 +2,7 @@ import { makeStyles } from '@material-ui/core/styles';
 
 export default makeStyles((theme) => ({
   formControl: {
-    margin: theme.spacing(1), minWidth: 120, marginBottom: '30px',
+     minWidth: 160, marginBottom: '30px',
   },
   selectEmpty: {
     marginTop: theme.spacing(2),
@@ -11,12 +11,26 @@ export default makeStyles((theme) => ({
     height: '600px', display: 'flex', justifyContent: 'center', alignItems: 'center',
   },
   container: {
-    padding: '25px',
+    padding: '0px 25px',
   },
   marginBottom: {
     marginBottom: '30px',
   },
   list: {
-    height: '65vh', overflow: 'auto',
+    display: 'flex', flexDirection:'column',
+    height: '45vh', overflowY: 'auto',
   },
+  box:{
+    display: 'flex',
+    flexDirection: 'row',
+    width:"100%"
+  },
+  typo:{
+    marginBottom: '30px',
+  },
+  forms: {
+    display: 'flex',
+    flexDirection: 'column',
+    marginRight:'40px'
+  }
 }));

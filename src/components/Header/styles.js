@@ -10,7 +10,8 @@ export default makeStyles((theme) => ({
         position : 'relative',
         // justifyContent:"space-evenly",
         marginRight: theme.spacing(2),
-        borderRadius : theme.shape.borderRadius,
+        // borderRadius : theme.shape.borderRadius,
+        borderRadius: "20px",
         [theme.breakpoints.up('sm')]: {marginLeft : theme.spacing(3), width:'auto'},
         backgroundColor : "white"
         

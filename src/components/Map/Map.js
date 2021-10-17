@@ -19,15 +19,14 @@ const Map = ({ coords, places, setCoords, setBounds, setChildClicked, weatherDat
         center={coords}
         defaultZoom={14}
         margin={[50, 50, 50, 50]}
-        // yesIWantToUseGoogleMapApiInternals
-        options={{ disableDefaultUI: false, zoomControl: true, styles: mapStyles }}
+        options={{ disableDefaultUI: true, zoomControl: true, styles: mapStyles }}
         onChange={(e) => {
           setCoords({ lat: e.center.lat, lng: e.center.lng });
           setBounds({ ne: e.marginBounds.ne, sw: e.marginBounds.sw });
         }}
         onChildClick={(child) => setChildClicked(child)}
       >
-{places.length && places.map((place, i) => (
+        {places.length && places.map((place, i) => (
           <div
             className={classes.markerContainer}
             lat={Number(place.latitude)}
@@ -53,10 +52,6 @@ const Map = ({ coords, places, setCoords, setBounds, setChildClicked, weatherDat
             <img src={`http://openweathermap.org/img/w/${data.weather[0].icon}.png`} height="70px" />
           </div>
         ))}
-
-          {/* </div> */}
-          {/* </div> */}
-          {/* ))} */}
       </GoogleMapReact>
     </div>
   );

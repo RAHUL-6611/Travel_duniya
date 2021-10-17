@@ -9,8 +9,6 @@ export const getPlacesData = async (type, sw, ne) => {
         bl_longitude: sw.lng,
         tr_longitude: ne.lng,
         tr_latitude: ne.lat,
-        lang: 'en_IN',
-         units: 'km'
       },
       headers: {
         // 'x-rapidapi-key': process.env.REACT_APP_RAPID_API_TRAVEL_API_KEY,
@@ -77,25 +75,6 @@ export const getWeatherData = async (lat, lng) => {
 //   headers: {
 //     'x-rapidapi-key': '815f2575e7msh21bc194b39ed181p1520b9jsn0b5649c077ee',
 //     'x-rapidapi-host': 'community-open-weather-map.p.rapidapi.com'
-//   }
-// };
-
-// axios.request(options).then(function (response) {
-// 	console.log(response.data);
-// }).catch(function (error) {
-// 	console.error(error);
-// });
-
-
-// var axios = require("axios").default;
-
-// var options = {
-//   method: 'GET',
-//   url: 'https://travel-advisor.p.rapidapi.com/locations/v2/auto-complete',
-//   params: {query: 'eiffel tower', lang: 'en_IN', units: 'km'},
-//   headers: {
-//     'x-rapidapi-host': 'travel-advisor.p.rapidapi.com',
-//     'x-rapidapi-key': '815f2575e7msh21bc194b39ed181p1520b9jsn0b5649c077ee'
 //   }
 // };
 

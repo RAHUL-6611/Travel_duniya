@@ -1,4 +1,5 @@
 # Getting Started with Create React App
+Live site : https://duniyaghumo.netlify.app/
 
 [![Screenshot-52.png](https://i.postimg.cc/ZRHKKPBF/Screenshot-52.png)](https://postimg.cc/gXwPgZKn)
 
